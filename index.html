@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="static/styles.css" />
+		<link rel="stylesheet" href="static/fonts/poppins/stylesheet.css" />
+		<link rel="stylesheet" href="static/styles.css" />
 
-	<title>Food Delivery</title>
-</head>
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<img class="logo" />
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__link"><a href="#">Home</a></li>
-					<li class="nav__link"><a href="#">Menu</a></li>
-					<li class="nav__link"><a href="#">Contact</a></li>
-					<li class="nav__link"><a href="#">Shop</a></li>
-				</ul>
-			</nav>
-			<form class="search-form">
-				<input type="search" placholder="Search..." class="search-form__input" />
-			</form>
-		</header>
-		<main class="content">
-
-		</main>
-	</div>
-</body>
+		<title>Food Delivery</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="logo">
+					<img
+						class="logo__img"
+						src="static/svg/chef-hat.svg"
+						height="32"
+						width="32"
+					/>
+					<div class="logo__text">Foo</div>
+				</div>
+				<nav class="nav">
+					<ul>
+						<li class="nav__link"><a href="#">Home</a></li>
+						<li class="nav__link"><a href="#">Menu</a></li>
+						<li class="nav__link"><a href="#">Contact</a></li>
+						<li class="nav__link"><a href="#">Shop</a></li>
+					</ul>
+				</nav>
+				<div class="header__aside">
+					<form class="search-form">
+						<img
+							class="search-form__icon"
+							src="static/svg/search.svg"
+							height="18"
+							width="18"
+						/>
+						<input
+							class="search-form__input"
+							type="search"
+							placholder="Search..."
+						/>
+					</form>
+				</div>
+			</header>
+			<main class="content">
+				<section class="content-left"></section>
+				<section class="content-right"></section>
+			</main>
+		</div>
+	</body>
 </html>
