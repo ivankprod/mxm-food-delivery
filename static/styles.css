@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 a {
 	color: #000;
 	text-decoration: none;
@@ -10,20 +14,21 @@ a:hover {
 	opacity: 60%;
 }
 
-html, body {
+html,
+body {
 	height: 100%;
-	width:  100%;
+	width: 100%;
 	min-height: 100vh;
-	min-width:  1511px;
+	min-width: 1511px;
 
-	margin:  0;
+	margin: 0;
 	padding: 0;
 
 	font-family: "Poppins", sans-serif !important;
 	font-size: 22px;
 	color: #000;
 
-	background: #FEBB41;
+	background: #febb41;
 }
 
 .wrapper {
@@ -32,8 +37,8 @@ html, body {
 	margin: 121px auto;
 	padding: 48px 86px;
 
-	background: #F4ECE1; /* fallback */
-	background: linear-gradient(304.58deg, #F4ECE1 57.1%, #FCFBF7 145.5%);
+	background: #f4ece1; /* :D */
+	background: linear-gradient(304.58deg, #f4ece1 57.1%, #fcfbf7 145.5%);
 
 	border-radius: 24px;
 }
@@ -47,7 +52,11 @@ html, body {
 .logo {
 	display: flex;
 
-	margin-top: -8px;
+	margin-top: -3px;
+}
+
+.logo__img {
+	margin-top: 1px;
 }
 
 .logo__text {
@@ -55,7 +64,16 @@ html, body {
 
 	font-size: 32px;
 	font-weight: 600;
-	line-height: 130%;
+	line-height: 44.74px;
+}
+
+.nav {
+	padding-left: 200px;
+}
+
+.nav__list {
+	margin: 0;
+	padding: 0;
 }
 
 .nav__link {
@@ -64,4 +82,90 @@ html, body {
 
 .nav__link + .nav__link {
 	margin-left: 56px;
+}
+
+.header__aside {
+	display: flex;
+	align-items: center;
+
+	margin-top: -2px;
+	padding-right: 4px;
+
+	background: #fff9f01a;
+
+	border-radius: 30px;
+
+	/* -16px and display flex bug */
+	box-shadow: 0px 6px 40px 0px #0000001a;
+
+	outline: 2px solid transparent;
+
+	transition: outline-color 0.3s ease;
+	will-change: outline-color; /* :D */
+}
+
+.header__aside:hover {
+	outline-color: #febc4131;
+}
+
+.search-form {
+	display: flex;
+
+	margin-top: 2px;
+	padding: 16px;
+}
+
+.search-form__icon {
+	margin-top: 8px;
+	margin-left: 12px;
+}
+
+.search-form__input {
+	appearance: none;
+
+	margin-left: 8px;
+
+	font: inherit;
+	line-height: 20.86px;
+
+	background: transparent;
+
+	outline: 0;
+	border: 0;
+}
+
+.cart-wrapper {
+	border-left: 1px solid #948c8c4f;
+}
+
+.cart {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+
+	height: 45px;
+	width: 64px;
+
+	padding-left: 14px;
+}
+
+.cart__items-count {
+	margin-top: -22px;
+	margin-left: 2px;
+
+	height: 14px;
+	width: 14px;
+
+	background: #ec2633;
+
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 14px;
+
+	border-radius: 50%;
+
+	box-shadow: 0px 0px 12px 1px #ff3334b8;
 }
