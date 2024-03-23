@@ -19,6 +19,7 @@
 							src="./static/svg/chef-hat.svg"
 							height="32"
 							width="32"
+							draggable="false"
 							alt="Foo"
 						/>
 						<div class="logo__text">Foo</div>
@@ -39,6 +40,7 @@
 							src="./static/svg/search.svg"
 							height="18"
 							width="18"
+							draggable="false"
 							alt="search"
 						/>
 						<input
@@ -50,13 +52,14 @@
 					</form>
 					<!-- Делаем враппер, чтобы opacity не влияла на border -->
 					<div class="cart-wrapper">
-						<a href="#">
+						<a href="#" draggable="false">
 							<div class="cart">
 								<img
 									class="cart__icon"
 									src="./static/svg/cart.svg"
 									height="18"
 									width="18"
+									draggable="false"
 									alt="cart"
 								/>
 								<div class="cart__items-count">2</div>
@@ -83,10 +86,12 @@
 						<button class="actions__order-btn">Order Now</button>
 						<button class="actions__watch-btn">
 							<div class="actions__watch-btn-icon">
-								<img class="actions__watch-btn-icon-img"
+								<img
+									class="actions__watch-btn-icon-img"
 									src="./static/svg/play.svg"
 									height="18"
 									width="18"
+									draggable="false"
 									alt="play"
 								/>
 							</div>
@@ -94,19 +99,24 @@
 						</button>
 					</div>
 					<div class="rating">
-                        <div>
-                            <img src="./static/svg/star.svg" alt="star">
-                            <img src="./static/svg/star.svg" alt="star">
-                            <img src="./static/svg/star.svg" alt="star">
-                            <img src="./static/svg/star.svg" alt="star">
-                            <img src="./static/svg/star.svg" alt="star">
-                        </div>
-                        <div class="rating__range">5 star rating</div>
-                        <div class="rating__reviews">based on 1788 reviews</div>
-                    </div>
+						<div>
+							<img src="./static/svg/star.svg" draggable="false" alt="star" />
+							<img src="./static/svg/star.svg" draggable="false" alt="star" />
+							<img src="./static/svg/star.svg" draggable="false" alt="star" />
+							<img src="./static/svg/star.svg" draggable="false" alt="star" />
+							<img src="./static/svg/star.svg" draggable="false" alt="star" />
+						</div>
+						<div class="rating__range">5 star rating</div>
+						<div class="rating__reviews">based on 1788 reviews</div>
+					</div>
 				</section>
 				<section class="section_right">
-					<img src="./static/img/food.png" height="712" width="750" />
+					<img
+						src="./static/img/food.png"
+						height="712"
+						width="750"
+						alt="food"
+					/>
 				</section>
 			</main>
 		</div>
