@@ -110,12 +110,12 @@ h2 {
 }
 
 .nav__list {
+	list-style-type: none;
+
+	display: flex;
+
 	margin: 0;
 	padding: 0;
-}
-
-.nav__link {
-	display: inline-block;
 }
 
 .nav__link + .nav__link {
