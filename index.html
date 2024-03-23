@@ -4,21 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="static/fonts/Poppins/stylesheet.css" />
-		<link rel="stylesheet" href="static/styles.css" />
+		<link rel="stylesheet" href="./static/fonts/Poppins/stylesheet.css" />
+		<link rel="stylesheet" href="./static/styles.css" />
 
 		<title>Food Delivery</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<a href="/">
+				<a href="#">
 					<div class="logo">
 						<img
 							class="logo__img"
-							src="static/svg/chef-hat.svg"
+							src="./static/svg/chef-hat.svg"
 							height="32"
 							width="32"
+							alt="Foo"
 						/>
 						<div class="logo__text">Foo</div>
 					</div>
@@ -26,20 +27,19 @@
 				<nav class="nav">
 					<ul class="nav__list">
 						<li class="nav__link"><a href="#">Home</a></li>
-						<li class="nav__link"><a href="#menu">Menu</a></li>
-						<li class="nav__link">
-							<a href="#contact">Contact</a>
-						</li>
-						<li class="nav__link"><a href="#shop">Shop</a></li>
+						<li class="nav__link"><a href="#">Menu</a></li>
+						<li class="nav__link"><a href="#">Contact</a></li>
+						<li class="nav__link"><a href="#">Shop</a></li>
 					</ul>
 				</nav>
 				<div class="header__aside">
 					<form class="search-form">
 						<img
 							class="search-form__icon"
-							src="static/svg/search.svg"
+							src="./static/svg/search.svg"
 							height="18"
 							width="18"
+							alt="search"
 						/>
 						<input
 							class="search-form__input"
@@ -50,13 +50,14 @@
 					</form>
 					<!-- Делаем враппер, чтобы opacity не влияла на border -->
 					<div class="cart-wrapper">
-						<a href="#cart">
+						<a href="#">
 							<div class="cart">
 								<img
 									class="cart__icon"
-									src="static/svg/cart.svg"
+									src="./static/svg/cart.svg"
 									height="18"
 									width="18"
+									alt="cart"
 								/>
 								<div class="cart__items-count">2</div>
 							</div>
@@ -65,8 +66,48 @@
 				</div>
 			</header>
 			<main class="content">
-				<section class="content-left"></section>
-				<section class="content-right"></section>
+				<section class="section_left">
+					<div class="caption">
+						<h1 class="caption__h1">Fast</h1>
+						<h2 class="caption__h2">
+							Food
+							<br />
+							Delivery
+						</h2>
+					</div>
+					<div class="description">
+						Sed ut perspiciatis unde omnis iste natus sit voluptatem
+						accusantium doloremque laudantium
+					</div>
+					<div class="actions">
+						<button class="actions__order-btn">Order Now</button>
+						<button class="actions__watch-btn">
+							<div class="actions__watch-btn-icon">
+								<img class="actions__watch-btn-icon-img"
+									src="./static/svg/play.svg"
+									height="18"
+									width="18"
+									alt="play"
+								/>
+							</div>
+							<span>Watch Video</span>
+						</button>
+					</div>
+					<div class="rating">
+                        <div>
+                            <img src="./static/svg/star.svg" alt="star">
+                            <img src="./static/svg/star.svg" alt="star">
+                            <img src="./static/svg/star.svg" alt="star">
+                            <img src="./static/svg/star.svg" alt="star">
+                            <img src="./static/svg/star.svg" alt="star">
+                        </div>
+                        <div class="rating__range">5 star rating</div>
+                        <div class="rating__reviews">based on 1788 reviews</div>
+                    </div>
+				</section>
+				<section class="section_right">
+					<img src="./static/img/food.png" height="712" width="750" />
+				</section>
 			</main>
 		</div>
 	</body>

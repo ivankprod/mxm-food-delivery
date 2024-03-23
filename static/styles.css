@@ -1,22 +1,11 @@
+/* RESET */
+
 * {
 	box-sizing: border-box;
 }
 
-a {
-	color: #000;
-	text-decoration: none;
-
-	transition: opacity 0.3s ease;
-	will-change: opacity; /* :D */
-}
-
-a:hover {
-	opacity: 60%;
-}
-
 html,
 body {
-	height: 100%;
 	width: 100%;
 	min-height: 100vh;
 	min-width: 1511px;
@@ -29,7 +18,56 @@ body {
 	color: #000;
 
 	background: #febb41;
+
+	overflow-y: visible;
 }
+
+a,
+button {
+	color: #000;
+	text-decoration: none;
+
+	transition: opacity 0.3s ease;
+	will-change: opacity; /* :D */
+}
+
+a:hover,
+button:hover {
+	opacity: 60%;
+}
+
+button {
+	appearance: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 70px;
+
+	margin: 0;
+	padding: 3px 0 0 0; /* Смотрится ровнее, чем 0 из-за странных line-height */
+
+	font: inherit;
+	line-height: 18.96px;
+
+	background: transparent;
+
+	border: 0;
+	outline: 0;
+
+	cursor: pointer;
+}
+
+h1,
+h2 {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 700;
+}
+
+/* MAIN */
 
 .wrapper {
 	width: 1511px;
@@ -37,7 +75,7 @@ body {
 	margin: 121px auto;
 	padding: 48px 86px;
 
-	background: #f4ece1; /* :D */
+	background: #f4ece1;
 	background: linear-gradient(304.58deg, #f4ece1 57.1%, #fcfbf7 145.5%);
 
 	border-radius: 24px;
@@ -95,24 +133,22 @@ body {
 
 	border-radius: 30px;
 
-	/* -16px and display flex bug */
-	box-shadow: 0px 6px 40px 0px #0000001a;
+	box-shadow: 0px 12px 40px -16px #0000001a;
 
 	outline: 2px solid transparent;
 
 	transition: outline-color 0.3s ease;
-	will-change: outline-color; /* :D */
 }
 
 .header__aside:hover {
-	outline-color: #febc4131;
+	outline-color: #febc41;
 }
 
 .search-form {
 	display: flex;
 
 	margin-top: 2px;
-	padding: 16px;
+	padding: 12px;
 }
 
 .search-form__icon {
@@ -168,4 +204,117 @@ body {
 	border-radius: 50%;
 
 	box-shadow: 0px 0px 12px 1px #ff3334b8;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 48px;
+}
+
+.section_left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	min-width: 568px;
+}
+
+.section_right {
+	margin-left: 86px;
+}
+
+.caption {
+	display: flex;
+	align-items: center;
+}
+
+.caption__h1 {
+	margin-left: -5px;
+
+	font-size: 125px;
+	line-height: 118.5px;
+	letter-spacing: -0.035em;
+
+	color: #ff7e00;
+}
+
+.caption__h2 {
+	margin-left: 18px;
+
+	font-size: 52px;
+	line-height: 50.3px;
+
+	color: #2f2f2f;
+}
+
+.description {
+	margin-top: 24px;
+
+	line-height: 30.54px;
+
+	color: #909090;
+}
+
+.actions {
+	display: flex;
+
+	margin-top: 44px;
+}
+
+.actions__order-btn {
+	width: 188px;
+
+	background: #2f2f2f;
+
+	color: #f4ece1;
+
+	border-radius: 84px;
+}
+
+.actions__watch-btn {
+	margin-left: 28px;
+}
+
+.actions__watch-btn-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 57px;
+	width: 57px;
+
+	margin-right: 12px;
+
+	background: #fff;
+
+	border-radius: 50%;
+
+	box-shadow: 0px 20px 36px -16px #0000001a;
+}
+
+.actions__watch-btn-icon-img {
+	margin-left: 4px;
+}
+
+.rating {
+	margin-top: 64px;
+
+	font-size: 18px;
+	line-height: 25.16px;
+}
+
+.rating__range {
+	margin-top: 12px;
+
+	font-weight: 600;
+
+	color: #2f2f2f;
+}
+
+.rating__reviews {
+	font-weight: 300;
+
+	color: #909090;
 }
